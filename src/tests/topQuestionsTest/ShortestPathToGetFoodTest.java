@@ -1,13 +1,9 @@
-package topAmazonQuestions;
+package tests.topQuestionsTest;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-//https://leetcode.com/problems/shortest-path-to-get-food/
-//Solution:
-//https://leetcode.com/problems/shortest-path-to-get-food/discuss/1127459/JAVA-BFS-Clean-Solution
-public class ShortestPathToGetFood {
+public class ShortestPathToGetFoodTest {
 
     public static void main(String[] args) {
         char[][] grid = {
@@ -16,16 +12,14 @@ public class ShortestPathToGetFood {
                 {'X','O','O','#','O','X'},
                 {'X','X','X','X','X','X'}
         };
-        var obj = new ShortestPathToGetFood();
+        var obj = new ShortestPathToGetFoodTest();
         System.out.println(obj.getFood(grid));
     }
 
     int[][] dirs = new int[][]{{1,0},{0,1},{-1,0},{0,-1}};
 
     /*
-    O(V + E) E represents neighbor (edges)
-    V: number of elements in the 2d array
-    Space complexity: O(V) Q will be at most O(V) space.
+    BFS
      */
     public int getFood(char[][] grid) {
         int m = grid.length;
@@ -35,11 +29,12 @@ public class ShortestPathToGetFood {
         boolean[][] visited = new boolean[m][n];
         int step=0;
         while(!q.isEmpty()){
-            for(int i=0; i < q.size(); i++){
+            int len = q.size();
+            for(int i=0; i < len; i++){
                 int[] pos = q.poll();
                 int x = pos[0];
                 int y = pos[1];
-                if(grid[x][y] == '#') return step + 1;
+                if(grid[x][y] == '#') return step;
                 for(int[] dir: dirs){
                     int newX = x + dir[0];
                     int newY = y + dir[1];
