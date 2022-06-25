@@ -7,6 +7,8 @@ public class Test {
 
     public static void main(String[] args) {
 
+        System.out.println("SQRT:" + Math.sqrt(12));
+
         long max = Integer.MAX_VALUE;
         long val = 100;
         long max2 = Integer.MAX_VALUE;

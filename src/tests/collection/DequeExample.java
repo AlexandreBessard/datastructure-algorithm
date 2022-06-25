@@ -21,7 +21,8 @@ public class DequeExample {
         System.out.println("dequeue = " + dequeue);
 
         System.out.println();
-        System.out.println("dequeue.offerLast(28) = " + dequeue.offerLast(28));
+        dequeue.push(28);
+        //System.out.println("dequeue.offerLast(28) = " + dequeue.push(28));
         //System.out.println("dequeue.offerFirst(29) = " + dequeue.offerFirst(29));
         System.out.println("dequeue = " + dequeue);
 
