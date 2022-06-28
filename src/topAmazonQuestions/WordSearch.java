@@ -9,8 +9,9 @@ public class WordSearch {
                 {'S', 'F', 'C', 'S'},
                 {'A', 'D', 'E', 'E'}
         };
+        String s1 = "SEE";
         String s = "ABCCEDFSA";
-        System.out.println(obj.exist(board, s));
+        System.out.println(obj.exist(board, s1));
     }
 
 

@@ -15,6 +15,7 @@ public class SearchSuggestionsSystem {
     }
 
     /*
+    Binary Search
     Time complexity : O(nlog(n)) + O(mlog(n))O(nlog(n))+O(mlog(n)).
     Where n is the length of products and m is the length of the search word.
     Here we treat string comparison in sorting as O(1)O(1). O(nlog(n))O(nlog(n))
@@ -48,6 +49,8 @@ public class SearchSuggestionsSystem {
         int i = start, j = products.length, mid;
         while(i < j) {
             mid = i + (j - i) / 2;
+            int comp = products[mid].compareTo(word);
+            System.out.println(word + " : " + comp + " with " + products[i]);
             if(products[mid].compareTo(word) >= 0) {
                 j = mid;
             } else {
