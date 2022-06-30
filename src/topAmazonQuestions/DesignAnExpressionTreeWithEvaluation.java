@@ -57,8 +57,8 @@ public class DesignAnExpressionTreeWithEvaluation {
             if(this.left == null && this.right == null) {
                 return Integer.parseInt(this.val);
             } else {
-                int v1 = left.evaluate();
-                int v2 = right.evaluate();
+                int v1 = this.left.evaluate();
+                int v2 = this.right.evaluate();
                 switch(this.val) {
                     case "+":
                         return v1 + v2;

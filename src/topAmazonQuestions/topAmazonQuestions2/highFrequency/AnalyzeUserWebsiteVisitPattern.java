@@ -1,4 +1,4 @@
-package topAmazonQuestions;
+package topAmazonQuestions.topAmazonQuestions2.highFrequency;
 
 import java.util.*;
 
@@ -68,6 +68,11 @@ public class AnalyzeUserWebsiteVisitPattern {
                     }else if(seqToCount.get(seq) == maxCount
                             //More than one pattern with the same largest score,
                             // get the lexicographically smallest such pattern
+                            /*
+                            Example: maxSeq = "home, about, career"
+                            seq = "cart, maps, home
+                            Lowest sequence is "cart, maps, home"
+                             */
                             && seq.compareTo(maxSeq) < 0){
                         maxSeq = seq;
                     }
