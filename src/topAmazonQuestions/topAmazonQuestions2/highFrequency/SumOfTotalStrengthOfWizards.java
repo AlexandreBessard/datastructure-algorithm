@@ -15,7 +15,6 @@ public class SumOfTotalStrengthOfWizards {
         System.out.println(obj.totalStrength(strength));
     }
 
-
     public int totalStrength(int[] strength) {
         long mod = 1000000007, res = 0;
         int n = strength.length;
