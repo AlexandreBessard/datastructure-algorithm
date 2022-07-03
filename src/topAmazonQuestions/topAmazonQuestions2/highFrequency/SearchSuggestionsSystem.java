@@ -1,4 +1,4 @@
-package topAmazonQuestions;
+package topAmazonQuestions.topAmazonQuestions2.highFrequency;
 
 import java.util.ArrayList;
 import java.util.Arrays;
