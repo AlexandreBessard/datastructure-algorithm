@@ -11,7 +11,13 @@ arrays that could have led to this tree.
 public class BSTSequences {
 
     public static void main(String[] args) {
-
+        TreeNode two = new TreeNode(2);
+        two.left = new TreeNode(1);
+        two.right = new TreeNode(3);
+        var obj = new BSTSequences();
+        obj.allSequences(two);
+        //Output:
+        //2, 1, 3  and 2, 3, 1
     }
 
     public List<LinkedList<Integer>> allSequences(TreeNode node) {
