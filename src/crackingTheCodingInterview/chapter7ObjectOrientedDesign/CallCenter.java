@@ -1,4 +1,4 @@
-package crackingTheCodingInterview.chapter7ObjectOrientedDesign.designPattern;
+package crackingTheCodingInterview.chapter7ObjectOrientedDesign;
 
 import java.util.List;
 
