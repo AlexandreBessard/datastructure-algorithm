@@ -1,6 +1,10 @@
 package algorithm;
 
 //https://www.geeksforgeeks.org/merge-sort/
+/*
+leetcode
+https://leetcode.com/explore/learn/card/recursion-ii/470/divide-and-conquer/
+ */
 public class DivideAndConquer {
 
     public static void main(String[] args) {
